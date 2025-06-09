@@ -21,7 +21,7 @@ html {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  height: 200vh;
   background: url("../images/hero-bg.png") no-repeat;
   background-size: cover;
   padding: 6.4rem 8.5rem 0;
@@ -69,4 +69,84 @@ html {
 
 .header-search input::placeholder {
   color: var(--white);
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 19rem;
+}
+
+.hero-content h4 {
+  color: var(--orange);
+  font-weight: 700;
+  font-size: 1.8rem;
+  margin-bottom: 3.2rem;
+  text-transform: uppercase;
+  position: relative;
+  padding-left: 9rem;
+}
+
+.hero-content h4::before {
+  content: "";
+  position: absolute;
+  width: 7.2rem;
+  height: 2px;
+  background-color: var(--orange);
+  left: 0;
+  top: 50%;
+}
+
+.hero-content h1 {
+  font-size: 9.6rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.hero-content button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 12.6rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.hero-content button i {
+  margin-left: 0.9rem;
+}
+
+.hero-content_contact {
+  position: absolute;
+  left: 8.5rem;
+}
+
+.hero-content_contact p {
+  transform: rotate(90deg);
+  position: relative;
+  left: -3rem;
+  bottom: 5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--white);
+}
+
+.hero-content_contact div {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content_contact i {
+  font-size: 2.4rem;
+  color: var(--white);
+  margin-bottom: 2rem;
+}
+
+.hero-content_contact i:last-child {
+  margin-bottom: 0;
 }
