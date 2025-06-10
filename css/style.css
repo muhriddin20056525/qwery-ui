@@ -17,6 +17,54 @@ html {
   --orange: #ffc178;
 }
 
+main {
+  padding: 0 20rem;
+  background-color: #000000;
+}
+
+.section-subtitle {
+  font-weight: 700;
+  font-size: 1.8rem;
+  letter-spacing: 6px;
+  color: var(--orange);
+  position: relative;
+  padding-left: 9rem;
+  margin-bottom: 2.7rem;
+}
+
+.section-subtitle::before {
+  content: "";
+  width: 7.2rem;
+  height: 2px;
+  background-color: var(--orange);
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.section-title {
+  font-size: 6.4rem;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.section-desc {
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--white);
+  opacity: 0.8;
+  padding: 2.7rem 0;
+}
+
+.section-link {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--orange);
+}
+.section-link i {
+  margin-left: 9px;
+}
+
 /* =========================== HERO =========================== */
 
 .hero {
@@ -149,4 +197,18 @@ html {
 
 .hero-content_contact i:last-child {
   margin-bottom: 0;
+}
+
+/* =========================== INTRO =========================== */
+
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+  align-items: center;
+}
+
+.intro-img img {
+  max-width: 598px;
+  height: 720px;
 }
