@@ -277,3 +277,24 @@ main {
 .bromo-info .section-link {
   text-align: center;
 }
+
+/* =========================== CULTURE =========================== */
+
+.culture {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.culture-info h2 {
+  width: 555px;
+}
+
+.culture-info p {
+  width: 632px;
+}
+
+.culture-img img {
+  width: 578px;
+  height: 720px;
+}
